@@ -10,10 +10,11 @@ import {
 
 // @ts-ignore
 import * as idb from "pouchdb-adapter-idb";
-import { html, TemplateResult } from "lit";
+import { TemplateResult } from "lit";
 import { futureBuilder } from "../components/future-builder";
 import { Todo, todosSchema } from "./todos";
 import { Base, BaseCollection } from "./base";
+import { DEFAULT_LOADING } from "../components/loading";
 
 const DATABASE_NAME = "todos" + "db";
 
@@ -34,11 +35,8 @@ async function setupDB() {
   await db.addCollections({
     todos: todosSchema,
   });
-
   return db;
 }
-
-const DEFAULT_LOADING = html`<span>Loading...</span>`;
 
 export const dbProvider = (
   builder: (db: RxDatabase<Schema>) => TemplateResult,
