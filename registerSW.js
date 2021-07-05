@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/vite-rxdb-lit/sw.js', { scope: '/vite-rxdb-lit/' })})}
