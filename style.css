@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons&display=block);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --mdc-theme-primary: rgb(0, 0, 0);
+  --mdc-theme-on-primary: rgb(255, 255, 255);
+}
