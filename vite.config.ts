@@ -5,6 +5,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/vite-rxdb-lit/",
   optimizeDeps: {
     // @ts-ignore
     allowNodeBuiltins: ["pouchdb-browser", "pouchdb-utils"],

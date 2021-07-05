@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -22,6 +23,7 @@
     "@material/mwc-textfield": "^0.21.0",
     "@material/mwc-top-app-bar-fixed": "^0.21.0",
     "events": "^3.3.0",
+    "gh-pages": "^3.2.3",
     "lit": "*",
     "pouchdb-adapter-idb": "^7.2.2",
     "pouchdb-browser": "^7.2.2",

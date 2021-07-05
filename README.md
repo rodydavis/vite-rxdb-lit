@@ -2,6 +2,10 @@
 
 Minimal example to get RxDB running with vite.
 
+Online demo [here](https://rodydavis.github.io/vite-rxdb-lit/).
+
+## Supports
+
 - Lit
 - Vite
 - Typescript
