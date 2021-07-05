@@ -4,7 +4,7 @@ import "@material/mwc-top-app-bar-fixed";
 import "@material/mwc-icon-button";
 import { iconButton } from "./app-button";
 
-const TITLE = "Hymns for Worship";
+const TITLE = "TODOS";
 
 export const appBar = (props: {
   navigation?: TemplateResult;
